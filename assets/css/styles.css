@@ -1,0 +1,146 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+}
+body{
+   font-family: Arial, sans-serif;
+}
+
+header{
+background-color: rgb(197, 246, 231);
+   padding: 25px 0;
+}
+header h1{
+   text-align: center;
+}
+nav ul{
+   display: flex;
+   align-items:center;
+   justify-content: space-around;
+   padding: 0 30%;
+   margin-top: 20px;
+   
+   
+}
+nav ul li a{
+   
+   color: rgb(33, 212, 9);
+   font-size: 20px;
+}
+
+
+main h2{
+   margin:45px 0;
+   margin-left: 150px;
+   font-size:25px;
+}
+.product-list  {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(3,1fr);
+   gap: 40px;
+   margin: 50px 180px;
+
+}
+.product {
+   background-color: white;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 4px 20px rgba(24, 22, 22, 0.1);
+   text-align: center;
+   max-width: 300px;
+}
+
+.product img {
+   width: 100%;
+   height: auto;
+}
+
+.product h2{
+   margin: 10px 0;
+}
+
+.product p {
+   margin: 20px 0;
+   
+} 
+.product .price{
+   font-size: 20px;
+   color: rgb(33, 212, 9);
+}
+
+footer{
+   padding: 15px 0;
+   background-color: rgb(7, 98, 68);
+}
+footer p{
+   text-align: center;
+   color: white;
+   font-size: 16px;
+}
+@media (max-width: 1024px) {
+   nav ul {
+       padding: 0 10%;
+       margin-top: 15px;
+   }
+
+   .product-list {
+       grid-template-columns: repeat(2, 1fr);
+       margin: 40px 60px;
+   }
+
+   main h2 {
+       margin-left: 50px;
+   }
+}
+
+@media (max-width: 768px) {
+   nav ul {
+       flex-direction: column;
+       padding: 0;
+       text-align: center;
+   }
+
+   .product-list {
+       grid-template-columns: 1fr;
+       margin: 30px 20px;
+   }
+
+   main h2 {
+       margin-left: 20px;
+   }
+
+   .product {
+       max-width: 100%;
+       margin: 0 auto;
+   }
+}
+
+@media (max-width: 480px) {
+   header {
+       padding: 20px 0;
+   }
+
+   nav ul li a {
+       font-size: 18px;
+   }
+
+   .product-list {
+       margin: 20px 10px;
+   }
+
+   main h2 {
+       font-size: 20px;
+       margin: 20px;
+   }
+
+   .product .price {
+       font-size: 20px;
+   }
+
+   footer p {
+       font-size: 14px;
+   }
+}
